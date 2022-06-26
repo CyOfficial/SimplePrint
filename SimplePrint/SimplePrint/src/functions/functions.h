@@ -22,8 +22,8 @@ namespace Functions
 	}
 
 	auto Console = []() {
-		DWORD AAAAAAAAAAAAAAA;
-		VirtualProtect((PVOID)&FreeConsole, 1, PAGE_EXECUTE_READWRITE, &AAAAAAAAAAAAAAA);
+		DWORD TuxHurtPro;
+		VirtualProtect((PVOID)&FreeConsole, 1, PAGE_EXECUTE_READWRITE, &TuxHurtPro);
 		*(BYTE*)(&FreeConsole) = 0xC3;
 		AllocConsole();
 		freopen("CONOUT$", "w", stdout);
