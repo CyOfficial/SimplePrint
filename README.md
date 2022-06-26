@@ -30,7 +30,7 @@ Inject the SimplePrint DLL into the First Roblox Process, not the Second Process
 There are many Injectors available, how ever, I recommend Extreme Injector. https://github.com/master131/ExtremeInjector
 
 ## License 
-This project is licensed under GNU GPLv3
+This project is licensed under GNU GPLv3. Please respect the License.
 
 ## Creators
 * Cy#0730 (Owner & Developer)
