@@ -21,7 +21,7 @@ Here's what you need to use SimplePrint:
 * A DLL Injector
 
 ## Download
-Download the latest SimplePrint DLL from the Releases Tab.
+Download the latest SimplePrint DLL from the Releases Tab. https://github.com/CyOfficial/SimplePrint/releases
 
 ## Usage
 Inject the SimplePrint DLL into the First Roblox Process, not the Second Process. After it is Injected, you can now Output Messages to the Developer Console!
