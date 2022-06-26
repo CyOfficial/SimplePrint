@@ -27,7 +27,12 @@ void user_input()
 			std::cout << "Please enter the Message you would like to be Outputted to the Console: ";
 			getline(std::cin, string_to_output);
 
-			Functions::print_to_developer_console(print_type, string_to_output);
+			bool success = Functions::print_to_developer_console(print_type, string_to_output);
+
+			if (!success)
+			{
+				std::cout << "Error while attempting to Print! Did you select a Valid Type?" << std::endl;
+			}
 
 			ask_for_type = true;
 		}

@@ -34,27 +34,13 @@ namespace Functions
 		::ShowWindow(ConsoleHandle, SW_NORMAL);
 	};
 
-	void print_to_developer_console(int printType, std::string output)
+	bool print_to_developer_console(int printType, std::string output)
 	{
-		if (printType == 0)
-		{
-			// Normal Print Output
-			print_rbx(0, output.c_str());
-		}
-		else if (printType == 1)
-		{
-			// Info
-			print_rbx(1, output.c_str());
-		}
-		else if (printType == 2)
-		{
-			// Warn
-			print_rbx(2, output.c_str());
-		}
-		else if (printType == 3)
-		{
-			// Error
-			print_rbx(3, output.c_str());
-		}
+		// 0 = Print, 1 = Info, 2 = Warn, 3 = Error.
+		if (printType < 0 || printType > 3) return false;
+
+		print_rbx(printType, output.c_str());
+
+		return true;
 	}
 }
